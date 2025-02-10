@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Attendance Form</title>
+        <style>
+            body{
+                background-color: beige;
+            }
+
+            .form-container {
+                
+                margin: 25px 50px 100px;
+                font-size: 18px; 
+            }
+
+            #submit {
+                background-color: rgb(210, 238, 169);
+                margin: 10px 0;
+              
+            }
+            #submit:hover {
+                background-color: rgb(255, 123, 108);
+            }   
+
+        </style>
+    </head>
+
+    <body>
+        
+        <div class="form-container">
+            <h1> Excused Abscence Request Form</h1>
+            <h3> For additional questions or concerns email me @ ProfessorJohnDoe@NotReal.edu! </h3>
+
+            <form name="Excused Abscence Form" action="Lab2_Page2.html" method="get">
+                <!--Name Fields-->
+                <label for = "fullName">Full Name</label>
+                <input type = "text" id = "fullName" placeholder="Enter Full Name" required> 
+                <br>
+                <br>
+
+                <label for = "date">Date of Abscence</label>
+                <input type = "date" id = "date" required> 
+                <br>
+                <br>
+
+                <label for = "reason">Reason</label>
+                <select> 
+                    <option value="medical">Sick/Illness</option>
+                    <option value="family">Family Emergency</option>
+                    <option value="doctor">Doctor's Appointment</option>
+                    <option value="sport">Athlete/Sports Game</option>
+                    <option value="other">Other</option> 
+                </select>
+            
+                <br>
+                <label for = "otherReason">*If you selected other reasoning elaborate here*</label>
+                <input type = "text" id = "otherReason" placeholder="Because..."> 
+                <br>
+                <br>
+                <button type="submit" id= "submit" value="Submit" style=" font-size: 15px; padding: 5px 15px;">Submit</button>
+
+                
+            </form> 
+        </div>
+    </body>
+</html>
